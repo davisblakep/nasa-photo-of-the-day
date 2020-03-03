@@ -17,7 +17,7 @@ const PhotoDetails = () => {
 
 
   return(
-      <PhotoCard data={photoList} copyright={photoList.copyright} explanation={photoList.explanation} hdurl={photoList.hdurl}/>
+      <PhotoCard data={photoList} explanation={photoList.explanation} hdurl={photoList.hdurl} video={photoList.url} title={photoList.title} date={photoList.date}/>
   )
 };
 
