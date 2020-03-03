@@ -7,7 +7,7 @@ const PhotoCard = (props) => {
             <h1>APOD: {props.title}</h1>
             <p>{props.date}</p>
             <img src={props.hdurl}></img>
-            <iframe width="560" height="315" src={props.video} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src={props.video} frameBorder="0" allow="autoplay; encrypted-media" allowFullscreen></iframe>
             <p>Description: {props.explanation}</p>
         </div>
     )
