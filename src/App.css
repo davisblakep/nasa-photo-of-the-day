@@ -1,5 +1,12 @@
+body{
+  background-color: black;
+}
+
 .App {
   text-align: center;
+  background-color: black;
+  color: white;
+
 }
 
 .App-logo {
@@ -26,6 +33,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+
+.photoCard-container {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
