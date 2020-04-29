@@ -1,19 +1,18 @@
 import React from "react";
 import "./App.css";
 
-
-
 import CardList from "./components/CardList"
-import { findByLabelText } from "@testing-library/react";
+import NavBarComp from "./components/NavBar"
+
 
 function App() {
   return (
     <div className="App">
-    
-      <div style={{margin: "8% 30% 0% 30%"}} className="card-items">
-      
+      <div style={{backgroundColor: "white", textAlign: "left"}}>
+    <NavBarComp />
+    </div>
+      <div style={{margin: "6% 30% 0% 30%"}} className="card-items">
       <CardList />
-      
       </div>
       
     </div>
