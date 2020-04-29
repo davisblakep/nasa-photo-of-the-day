@@ -1,13 +1,21 @@
 import React from "react";
 import "./App.css";
 
+
+
+import CardList from "./components/CardList"
+import { findByLabelText } from "@testing-library/react";
+
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+    
+      <div style={{margin: "8% 30% 0% 30%"}} className="card-items">
+      
+      <CardList />
+      
+      </div>
+      
     </div>
   );
 }
