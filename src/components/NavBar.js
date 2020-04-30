@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
+import DatePicker from './DatePicker';
+
 const NavBarComp = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -9,7 +11,7 @@ const NavBarComp = (props) => {
   return (
     <div>
       <Navbar color="faded" light>
-        <NavbarBrand className="mr-auto">NASA Photo Of The Day</NavbarBrand>
+  <NavbarBrand className="mr-auto">NASA Photo Of The Day</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
@@ -18,6 +20,9 @@ const NavBarComp = (props) => {
             </NavItem>
             <NavItem>
               <NavLink href="https://www.nasa.gov" target="_blank">NASA Official</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink><DatePicker /></NavLink>
             </NavItem>
           </Nav>
         </Collapse>

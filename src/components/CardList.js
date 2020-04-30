@@ -23,15 +23,11 @@ function CardList(){
 
     return(
         <div>
-            
             {nasaPhoto.map(x =>{
                 return(
-                    
                     <PhotoCard {...x} />
-                    
                 )
             })}
-           
         </div>
     )
 }
