@@ -8,6 +8,8 @@ const NavBarComp = (props) => {
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
+  console.log("NavBarcomp props", props)
+
   return (
     <div>
       <Navbar color="faded" light>
@@ -22,7 +24,7 @@ const NavBarComp = (props) => {
               <NavLink href="https://www.nasa.gov" target="_blank">NASA Official</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink><DatePicker /></NavLink>
+              <NavLink><DatePicker dateInfo={props.dateInfo} dateChange = {props.dateChange} /></NavLink>
             </NavItem>
           </Nav>
         </Collapse>
